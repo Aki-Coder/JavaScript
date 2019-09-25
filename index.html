@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Vezbamo-JS</title>
+</head>
+
+<body>
+
+<p>Nesto o primitivnim tipovima</p>
+
+
+<script>
+
+  //prva upotreba console.log
+  console.log("Prva poruka u js");
+
+  //varijable
+  let age = 24;
+  let name = "Andreja";
+  let surname = "Simic";
+  console.log(name);
+  console.log(surname);
+  console.log(24);
+
+  //konstante
+  const temp=12.4,IME="Aki";
+  console.log(temp);
+  console.log(IME);
+
+  //liteal
+  let literal="Ovo je 4ti tutorijal";
+  let reference = literal;
+  console.log(reference);
+
+  //primitivni tipovi
+
+  let godine = 20;
+  godine="Osoba ima " + 12 + " godina";
+  console.log(godine);
+
+  //string
+  let string = "Reprezentacija teksta";
+  console.log(string);
+
+  //deklaracija boolean vrednosti
+  let tacno = true;
+  let netacno = false;
+
+  //kreiranje simobola
+  // const blue = symbol("Plavo");
+  // const white = symbol("Ova boja je bela");
+  // blue === white //false
+
+  //slucaj undifined
+  let vrednost;
+  vrednost = null;
+  vrednost = "nova vrednost je " +2;
+  console.log(vrednost);
+</script>
+
+
+<p>Nesto o objektima</p>
+<script>
+  const obj = {}; //kreiranje objekta
+  obj.godine = 24; //svojstvo sa vrednoscu
+  console.log(obj.godine);
+
+  obj.godine; //svojstvo sa undifined vrednoscu
+  console.log(obj.godine);
+
+  //kreiranje objekta
+  const objekat = {
+    ime:"Andreja", // key:name, value:Andreja
+    god: 21   //key:age, value:24
+  };
+
+  //brisanje svojstva objekta
+  delete objekat.god;
+  console.log(objekat.god);
+
+</script>
+
+<p>Nizovi</p>
+<script>
+  //kreiranje niza sa drugacijom vrstom podataka
+  const niz = [1,2,3,4,5]; //isti tip podataka
+  const niz2 = [1,2,null,4,"pet"]; //mesovit niz
+  const niz3 = ["niz","od","stringova"];
+
+  //niz koji sadrzi niz
+  const niz4 = [
+    [1,2,3],
+    [4,5,6]
+  ];
+
+  //duzina niza
+  console.log(niz.length);
+
+  //dobiti vrednost niza
+  console.log(niz[0]);
+
+  //menjaje elementa niza
+  niz3[0]="novi element";
+  console.log(niz3);
+  console.log(niz3[0]);
+</script>
+
+<p>Datumi</p>
+
+<script>
+  //prikaz datuma
+  const trenutni = new Date();
+  //kreiranje datuma sa vremenom
+  const datum = new Date(2019,09,26,15,0);
+  console.log(datum);
+  console.log("Trenutni datum je "+trenutni);
+</script>
+
+<p>Mape</p>
+<script>
+  //kako kreirati mapu
+  const mapa = new Map();
+  //dodeliti ulogu korisniku
+  mapa.set(t1,"Korisnik1");
+  mapa.set(k2,"Korisnik2");
+</script>
+
+<p>Skupovi</p>
+<script>
+  //kreiranje skupoova
+  const skup = new Set();
+  skup.add("Korisnik1");
+</script>
+</body>
+</html>
