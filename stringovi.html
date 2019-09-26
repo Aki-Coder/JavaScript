@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Drugi dan</title>
+</head>
+
+<body>
+
+  <script>
+    let str = 'ovo je nekakav sTr1n4"Koji u sebi sadrzi poruku sa  " navodnicima"';
+    let str1 = "Ovo je string koji sadrzi apostof u sebi, jel 'da ?";
+    console.log(str);
+    console.log(str1);
+    //string sa porukom u sebi pod znacima " ", sa upotrebom \ za quot-e
+    let strgreska = "Aki je rekla \"Danas su druge vezbe\"";
+    console.log(strgreska);
+
+    //konkatenacija stringova
+    let temp = 18;
+    let poruka = "Trenutna temperatura je "+temp+"\u00b0c"; //\u00b0c daje ispis stepena
+    console.log(poruka);
+
+    //nove linije u stringu
+    let novi = "Prva linija \n Druga linija\n Treca linija";
+    console.log(novi);
+
+    //proba sa stringovima
+    let proba1 = 5*"5"; //mnozenje broja i stringa ->dozvoljeno (25)
+    let proba2 = 5+"5"; //broj + string -> izvrsena konkatenacija (55)
+    console.log(proba1);
+    console.log(proba2);
+  </script>
+
+
+
+</body>
+</html>
