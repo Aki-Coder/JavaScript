@@ -50,3 +50,8 @@ m+=n;
 console.log("Vrednost post inkrementa je "+m);
 
 //Operatori poredjenja
+let a = 25, b = 24;
+console.log(a<b);
+console.log(a>b);
+let c = 3,d = 3;
+console.log(c<=d);
